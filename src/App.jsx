@@ -26,6 +26,8 @@ const state1 = {
   contactText: "for queries contact us through",
   contactLink: "info@zacow.com",
   toggleImage: IMAGE_MIRROR,
+  // ADD FONT CLASS FOR STATE 1 (Poppins)
+  titleFontClass: "font-fk-grotesk",
 };
 
 const state2 = {
@@ -48,6 +50,8 @@ const state2 = {
   contactText: "for queries contact us through",
   contactLink: "support@zacow.com",
   toggleImage: IMAGE_CUSTOM,
+  // ADD FONT CLASS FOR STATE 2 (DM Sans)
+  titleFontClass: "font-ppeditorialold",
 };
 
 // --- App Component ---
@@ -118,12 +122,12 @@ function App() {
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            {/* Main large text - CONVERTED INLINE STYLES */}
+            {/* Main large text - DYNAMIC FONT CLASS APPLIED HERE */}
             <h1
-              className="
-                font-fk-grotesk mb-10
-                 text-5xl md:text-[4rem] font-medium leading-tight
-              "
+              className={`
+                ${currentContent.titleFontClass} mb-10
+                text-5xl md:text-[4rem] font-medium leading-tight
+              `}
             >
               {currentContent.title}
             </h1>

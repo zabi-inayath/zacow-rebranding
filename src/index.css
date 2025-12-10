@@ -8,6 +8,18 @@
   font-display: swap; /* Tells the browser how to handle loading */
 }
 
+@font-face {
+  font-family: 'ppeditorialold';
+  src: url('/fonts/ppeditorialold-regular.otf') format('opentype');
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+  font-display: swap; /* Tells the browser how to handle loading */
+}
+
 .font-fk-grotesk {
-  font-family: 'FK Grotesk', sans-serif;
+  font-family: 'FK Grotesk';
+}
+
+.font-ppeditorialold {
+  font-family: 'ppeditorialold';
 }
